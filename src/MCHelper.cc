@@ -13,6 +13,9 @@
 
 using namespace lcio;
 
+namespace commonAnalysis
+{
+    
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
 void MCHelper::PrintMC(const LCCollection* pMCPfoCollection, const int maxNFfo)
@@ -168,4 +171,6 @@ const MCParticle* MCHelper::GetMCParticle(const ReconstructedParticleVec &recoVe
     }
     //std::cout << "MCHelper::GetMCParticle best mc " << pBestMC << " e " << highestE << std::endl;
     return pBestMC;
+}
+
 }

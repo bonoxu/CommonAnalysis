@@ -1,6 +1,9 @@
 #include <iostream>
 #include <TTreeHelper.h>
 
+namespace commonAnalysis
+{
+
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 TTreeHelper::TTreeHelper(const std::string &tFileName, const std::string &tFileOption, const std::string &tTreeName, const std::string &tTreeID)
@@ -149,4 +152,4 @@ double TTreeHelper::GetDoubleVar(const std::string &varName) const
     return 0.f;
 }
 
-
+}

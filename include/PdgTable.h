@@ -10,6 +10,9 @@
 
 #include <string>
 
+namespace commonAnalysis
+{
+    
 // Specify (name, pdg code, mass in GeV, width in GeV, charge)
 #define PARTICLE_DATA_TABLE(d)                                                          \
     d(PHOTON,               22,             0.E+00f,             0.E+00f,       0)      \
@@ -232,6 +235,8 @@ inline int PdgTable::GetParticleCharge(const int pdgCode)
         PARTICLE_DATA_TABLE(GET_PARTICLE_CHARGE_SWITCH)
         default : throw std::exception();
     }
+}
+
 }
 
 #endif // #ifndef PDG_TABLE_H

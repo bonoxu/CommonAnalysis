@@ -14,6 +14,9 @@ using namespace lcio;
 //namespace EVENT {class ReconstructedParticle;}
 namespace UTIL {class LCRelationNavigator;}
 
+namespace commonAnalysis
+{
+
 class MCHelper
 {
 
@@ -107,6 +110,10 @@ inline void MCHelper::PrintMC(const LCCollection* pMCPfoCollection)
 inline TLorentzVector MCHelper::GetMomFromMCParticle(const MCParticle *pMC)
 {
     return pMC ? TLorentzVector(pMC->getMomentum()[0], pMC->getMomentum()[1], pMC->getMomentum()[2], pMC->getEnergy()) : TLorentzVector(0.f, 0.f, 0.f, 0.f);
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
 }
 
 #endif

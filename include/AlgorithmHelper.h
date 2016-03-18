@@ -1,6 +1,9 @@
 #ifndef AlgorithmHelper_h
 #define AlgorithmHelper_h 1
 
+namespace commonAnalysis
+{
+
 class AlgorithmHelper
 {
 
@@ -62,7 +65,8 @@ inline bool AlgorithmHelper::next_combination(const Iterator first, Iterator k, 
    std::rotate(first,k,last);
    return false;
 }
-
+    
+}
 #endif
 
 

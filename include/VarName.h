@@ -3,6 +3,9 @@
 
 #include <string>
 
+namespace commonAnalysis
+{
+
 class VarName 
 {
 
@@ -197,5 +200,7 @@ public:
         }
     }
 };
+
+}
 
 #endif

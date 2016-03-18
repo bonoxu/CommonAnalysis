@@ -8,6 +8,9 @@
 #include <TFile.h>
 #include <TTree.h>
 
+namespace commonAnalysis
+{
+    
 class TTreeHelper 
 {
 
@@ -199,6 +202,7 @@ inline NumberType TTreeHelper::GetVar(const std::string &varName) const
     return 0;
 }
 
+}
 
 #endif
 

@@ -8,6 +8,9 @@
 
 using namespace lcio;
 
+namespace commonAnalysis
+{
+    
 class RecoHelper
 {
 
@@ -209,6 +212,8 @@ inline float RecoHelper::GetCosineInCoMFrame(const TLorentzVector &lhs, const TL
     TLorentzVector decayParticleL(lhs);
     decayParticleL.Boost(-dijet.BoostVector());
     return (decayParticleL.Vect().Dot(dijet.Vect()) / (dijet.Vect().Mag() * decayParticleL.Vect().Mag()));
+}
+
 }
 
 #endif
